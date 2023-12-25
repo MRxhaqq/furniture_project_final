@@ -1,0 +1,17 @@
+{
+  "name": "furniture_project_final",
+  "version": "1.0.0",
+  "description": "furniture project web app",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Shuaib Abdulhaqq Omieza",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

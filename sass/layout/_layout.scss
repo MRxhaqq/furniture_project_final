@@ -1,0 +1,70 @@
+.container {
+
+    margin: 4rem auto;
+    max-width: 120rem;
+    min-height: 60rem;
+
+    @include respond (tab-land) {
+        margin: 0;
+        max-width: 100%;
+        padding: 3rem;
+    }
+
+    @include respond (tab-port) {
+        padding: 2rem;
+    }
+
+    @include respond (phone) {
+        padding: 1rem;
+    }
+
+}
+
+.header {
+    border-bottom: 1px solid var(--color-grey-light-2);
+    min-height: 7rem;
+    font-size: 1.2rem;
+    margin-bottom: 8rem;
+
+    @include respond (phone) {
+       margin-bottom: 2rem;
+    }
+}
+
+.main-view {
+    margin-top: 0 auto;
+}
+
+.footer {
+
+    margin-top: 15rem;
+    display: flex;
+    min-height: 20rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-grey-light-4);
+
+    @include respond (phone) {
+        padding: 3rem;
+    }
+
+    &__name {
+       
+    }
+
+    &__heading-primary {
+        font-size: 3.5rem;
+        font-weight: 300;
+        letter-spacing: .5rem;
+        color: var(--color-orange-light);
+
+        @include respond (phone-1) {
+            font-size: 2.5rem;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+}
